@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlackjackActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_pts_crupier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Puntos Crupier: "
+            android:textSize="30sp"/>
+
+        <GridLayout
+            android:id="@+id/gl_crupier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4">
+
+        </GridLayout>
+
+        <ImageButton
+            android:id="@+id/iv_naipes"
+            android:layout_width="63dp"
+            android:layout_height="100dp"
+            android:src="@drawable/naipe"
+            android:scaleType="centerCrop"
+            android:background="#FFF"
+            android:padding="5dp" android:onClick="pedirNaipe"/>
+
+        <TextView
+            android:id="@+id/tv_pts_jugador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Puntos Jugador: "
+            android:textSize="30sp"/>
+
+        <GridLayout
+            android:id="@+id/gl_jugador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4">
+
+        </GridLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plantarme"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

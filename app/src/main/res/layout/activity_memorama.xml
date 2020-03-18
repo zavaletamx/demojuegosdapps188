@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemoramaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gl_cartas"
+            android:columnCount="4">
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/interrogacion"
+                android:tag="1"
+                android:scaleType="centerInside"
+                android:onClick="tirar"/>
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/interrogacion"
+                android:tag="1"
+                android:scaleType="centerInside"
+                android:onClick="tirar"/>
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/interrogacion"
+                android:tag="2"
+                android:scaleType="centerInside"
+                android:onClick="tirar"/>
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/interrogacion"
+                android:tag="2"
+                android:scaleType="centerInside"
+                android:onClick="tirar"/>
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/interrogacion"
+                android:tag="3"
+                android:scaleType="centerInside"
+                android:onClick="tirar"/>
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/interrogacion"
+                android:tag="3"
+                android:scaleType="centerInside"
+                android:onClick="tirar"/>
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/interrogacion"
+                android:tag="4"
+                android:scaleType="centerInside"
+                android:onClick="tirar"/>
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/interrogacion"
+                android:tag="4"
+                android:scaleType="centerInside"
+                android:onClick="tirar"/>
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/interrogacion"
+                android:tag="5"
+                android:scaleType="centerInside"
+                android:onClick="tirar"/>
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/interrogacion"
+                android:tag="5"
+                android:scaleType="centerInside"
+                android:onClick="tirar"/>
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/interrogacion"
+                android:tag="6"
+                android:scaleType="centerInside"
+                android:onClick="tirar"/>
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/interrogacion"
+                android:tag="6"
+                android:scaleType="centerInside"
+                android:onClick="tirar"/>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

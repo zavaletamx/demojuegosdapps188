@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BatallaNavalActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gl_j1"
+            android:columnCount="4">
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="0"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="1"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="2"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="3"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="4"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="5"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="6"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="7"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="8"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="9"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="10"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="11"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="12"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="13"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="14"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="15"/>
+
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gl_j2"
+            android:columnCount="4"
+            android:visibility="gone">
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="0"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="1"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="2"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="3"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="4"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="5"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="6"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="7"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="8"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="9"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="10"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="11"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="12"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="13"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="14"/>
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerInside"
+                android:onClick="tirar"
+                android:background="@drawable/mira"
+                android:tag="15"/>
+
+
+        </GridLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continuar"
+            android:id="@+id/btn_continuar"
+            android:background="#FF9800"
+            android:layout_marginTop="15dp"
+            android:enabled="false"
+            android:onClick="iniciar"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

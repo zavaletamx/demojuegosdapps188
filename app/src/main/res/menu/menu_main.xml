@@ -1,0 +1,49 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="mx.uteq.dapps.hola188menu.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <!--
+    ITEM es el elemento que contiene un menu
+    seleccionable
+    id y titulo son indispensables
+    -->
+    <item
+        android:id="@+id/menu_scroll"
+        android:orderInCategory="101"
+        android:title="Scroll"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_chamaco"/>
+
+    <item
+        android:id="@+id/menu_linea"
+        android:orderInCategory="102"
+        android:title="Linear" />
+
+    <item android:title="PRACTICAS">
+        <menu>
+            <item
+                android:id="@+id/sm_p1"
+                android:title="P1" />
+
+            <item
+                android:id="@+id/sm_p2"
+                android:title="P2" />
+
+            <item
+                android:id="@+id/sm_p3"
+                android:title="P3" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_inicio"
+        android:title="Inicio"
+        android:orderInCategory="90" />
+
+</menu>
