@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroWsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Registro"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp" />
+
+        <EditText
+            android:id="@+id/et_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User: (4 letras)"
+            android:inputType="text"
+            android:maxLength="4"/>
+
+        <EditText
+            android:id="@+id/et_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Score: (5 dígitos)"
+            android:inputType="number"
+            android:maxLength="5"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:onClick="registroWs"
+            android:layout_marginTop="30dp"/>
+        
+        <ProgressBar
+            android:id="@+id/pb_registro"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_marginTop="15dp"
+            android:indeterminate="true" />
+
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>
