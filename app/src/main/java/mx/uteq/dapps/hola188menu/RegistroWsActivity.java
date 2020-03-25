@@ -9,12 +9,16 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
+import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -44,11 +48,9 @@ public class RegistroWsActivity extends AppCompatActivity {
 
         //Inicializamos la variable a la conexion
         conexionServidor = Volley.newRequestQueue(this);
-
     }
 
     public void registroWs(final View v) {
-
         //Validar el contenido de los ET
         nombre = etNombre.getText().toString().toUpperCase();
         score =  etScore.getText().toString();
@@ -80,6 +82,24 @@ public class RegistroWsActivity extends AppCompatActivity {
                         //Convertimos la respuesta a JSON
                         Toast.makeText(RegistroWsActivity.this, response, Toast.LENGTH_LONG).show();
                         limpiarCampos(v);
+                        try {
+                            /*
+                            {
+                            mensaje :'OK',
+                            calificacion : 4.5
+                            }
+                             */
+                            JSONObject obj = new JSONObject(response);
+
+                            obj.getString("mensaje");
+                            obj.getDouble("calificacion");
+
+                        }
+
+                        catch(JSONException je) {
+
+
+                        }
                     }
                 },
                 new Response.ErrorListener() {
@@ -104,6 +124,12 @@ public class RegistroWsActivity extends AppCompatActivity {
                 return parametros;
             }
         };
+        //Evitamos la ejecución doble
+        peticionServidor.setRetryPolicy(new DefaultRetryPolicy(
+                0,
+                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT
+        ));
         //Ejecutar el servicio
         conexionServidor.add(peticionServidor);
 
@@ -115,5 +141,4 @@ public class RegistroWsActivity extends AppCompatActivity {
         btn.setEnabled(true);
         pbRegistro.setVisibility(View.GONE);
     }
-
 }
