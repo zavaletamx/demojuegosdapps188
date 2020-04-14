@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="mx.uteq.dapps.hola188menu" >
+    package="mx.uteq.dapps.hola188menu">
     <!-- Agregar permisos -->
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,43 +11,50 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true" >
-        <activity android:name=".ListaRemotaActivity" >
+        android:usesCleartextTraffic="true">
+        <activity android:name=".EjemploABCActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegistroWsActivity" >
+        <activity android:name=".ListaRemotaActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BlackjackActivity" >
+        <activity android:name=".RegistroWsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BatallaNavalActivity" >
+        <activity android:name=".BlackjackActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MemoramaActivity" >
+        <activity android:name=".BatallaNavalActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AhorcadoActivity" >
+        <activity android:name=".MemoramaActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AhorcadoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -55,7 +62,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".GatoActivity" />
-        <activity android:name=".RegGatoActivity" >
+        <activity android:name=".RegGatoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

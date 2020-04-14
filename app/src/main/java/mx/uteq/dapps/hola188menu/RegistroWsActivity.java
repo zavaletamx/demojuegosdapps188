@@ -91,14 +91,16 @@ public class RegistroWsActivity extends AppCompatActivity {
                              */
                             JSONObject obj = new JSONObject(response);
 
-                            obj.getString("mensaje");
-                            obj.getDouble("calificacion");
+                            Toast.makeText(
+                                    RegistroWsActivity.this,
+                                    obj.getString("mensaje"),
+                                    Toast.LENGTH_SHORT
+                            ).show();
 
                         }
 
                         catch(JSONException je) {
-
-
+                            Toast.makeText(RegistroWsActivity.this, je.getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     }
                 },
@@ -111,7 +113,6 @@ public class RegistroWsActivity extends AppCompatActivity {
                     }
                 }
         ){
-            //Metodo que pasa los parametros al servicio
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> parametros = new HashMap<>();
@@ -120,7 +121,6 @@ public class RegistroWsActivity extends AppCompatActivity {
                 //A LA IZQUIERDA el valor de ANDROID
                 parametros.put("nombre", nombre);
                 parametros.put("score", score);
-
                 return parametros;
             }
         };
@@ -141,4 +141,5 @@ public class RegistroWsActivity extends AppCompatActivity {
         btn.setEnabled(true);
         pbRegistro.setVisibility(View.GONE);
     }
+
 }
